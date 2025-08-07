@@ -1,0 +1,32 @@
+// Paleta de cores da Elegance Store Prime
+
+// Cores principais
+$color-dark: #1c1c1c; // Preto fosco
+$color-gray-dark: #2f2f2f; // Cinza titânio
+$color-white-light: #f9f9f9; // Branco gelo
+$color-gold: #c8a96a; // Dourado queimado
+$color-blue-deep: #244856; // Azul petróleo
+$color-beige-soft: #e6dcd3; // Bege claro
+
+// Cores auxiliares
+$color-text-default: $color-white-light;
+$color-text-strong: #ffffff;
+$color-bg-default: $color-dark;
+$color-bg-card: $color-gray-dark;
+$color-border-default: rgba(255, 255, 255, 0.1);
+
+// Gradientes e variações
+$gradient-dark-gold: linear-gradient(135deg, $color-dark, $color-gold);
+$gradient-blue-gold: linear-gradient(135deg, $color-blue-deep, $color-gold);
+
+// Sombras
+$shadow-card: 0 4px 12px rgba(0, 0, 0, 0.2);
+$shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+// Fontes
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+// Tamanhos de borda e radius
+$border-radius: 12px;
+$border-radius-lg: 20px;

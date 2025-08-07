@@ -1,0 +1,23 @@
+// Tema claro (Light Theme)
+:root {
+  --color-bg-page: #F9F9F9;
+  --color-bg-card: #FFFFFF;
+  --color-text-default: #1C1C1C;
+  --color-text-strong: #000000;
+  --color-primary: #C8A96A; // Dourado queimado
+  --color-accent: #244856; // Azul petróleo
+  --color-border-default: rgba(0, 0, 0, 0.1);
+  --shadow-elevation: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+// Tema escuro (Dark Theme)
+[data-theme='dark'] {
+  --color-bg-page: #1C1C1C;
+  --color-bg-card: #2F2F2F;
+  --color-text-default: #F9F9F9;
+  --color-text-strong: #FFFFFF;
+  --color-primary: #C8A96A;
+  --color-accent: #E6DCD3; // Bege claro para contraste
+  --color-border-default: rgba(255, 255, 255, 0.1);
+  --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
