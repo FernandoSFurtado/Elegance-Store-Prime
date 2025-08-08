@@ -5,11 +5,15 @@
     --color-text-default: #1c1c1c;
     --color-text-strong: #000000;
     --color-text-muted: #6c757d; //
+    --text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+    --title-shadow: 0 0 10px rgba(255, 255, 255, 0.85);
     --color-primary: #c8a96a; // Dourado queimado
     --color-accent: #244856; // Azul petróleo
     --color-border-default: rgba(0, 0, 0, 0.1);
     --shadow-elevation: 0 4px 10px rgba(0, 0, 0, 0.1);
     --color-primary-hover: #b89a5c; // Uma cor um pouco mais escura que var(--color-primary)
+    --hero-bg-image: url('/assets/hero-bg-5.png');
+    --hero-bg-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 // Tema escuro (Dark Theme)
@@ -18,10 +22,14 @@
     --color-bg-card: #2f2f2f;
     --color-text-default: #f9f9f9;
     --color-text-strong: #ffffff;
-    --color-text-muted: #6c757d; //
+    --color-text-muted: #6c757d; 
+     --text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+    --title-shadow: 0 0 10px rgba(255, 255, 255, 0.85);
     --color-primary: #c8a96a;
     --color-accent: #e6dcd3; // Bege claro para contraste
     --color-border-default: rgba(255, 255, 255, 0.1);
     --shadow-elevation: 0 4px 12px rgba(0, 0, 0, 0.3);
     --color-primary-hover: #b89a5c; // Uma cor um pouco mais escura que var(--color-primary)
+    --hero-bg-image: url('/assets/hero-bg-5.png');
+    --hero-bg-gradient: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }

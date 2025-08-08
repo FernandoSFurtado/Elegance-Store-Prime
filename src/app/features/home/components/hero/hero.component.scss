@@ -3,20 +3,29 @@
 }
 
 .hero {
+    position: relative;
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/hero-bg-5.png');
+    background: var(--hero-bg-gradient), var(--hero-bg-image);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     color: var(--color-primary);
     text-align: center;
 
+    z-index: 2;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards ease-out;
+    animation-delay: 0.3s;
+
     .container_logo {
+        position: relative;
+        z-index: 3;
         .logo {
             width: 25rem;
             height: auto;
@@ -26,10 +35,13 @@
     .content {
         max-width: 960px;
         width: 40%;
+        position: relative;
+        z-index: 3;
 
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            text-shadow: var(--title-shadow);
         }
 
         p {
@@ -38,32 +50,53 @@
             max-width: 500px;
             margin-left: auto;
             margin-right: auto;
+            text-shadow: var(--title-shadow);
+
+            .emphasis {
+                font-weight: 700; // negrito
+                font-size: 1.4rem; // maior que o resto do parágrafo
+                color: var(--color-primary); // cor dourada para destacar
+                display: block; // faz quebra de linha e espaço
+                margin-top: 0.5rem;
+                text-shadow: 0 0 8px rgba(200, 169, 106, 0.8); // brilho suave
+                animation: pulseGlow 3s ease-in-out infinite;
+            }
         }
     }
+}
 
-    .btn-primary {
-        margin-top: 1rem;
-        background-color: var(--color-primary);
-        color: var(--color-text-strong);
-        padding: 0.8rem 1.6rem;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-        border-radius: 4px;
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0%,
+    100% {
+        text-shadow: 0 0 8px rgba(200, 169, 106, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 16px rgba(200, 169, 106, 1);
     }
 }
 
 @media (max-width: 900px) {
     .hero {
-        height: 50vh;
-        background-size: 60%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        height: auto; // deixa altura mais fluida no mobile
+        padding: 1rem;
     }
-    .hero .content h1 {
-        font-size: 2rem;
+    .container_logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-    .hero .content p {
-        font-size: 1rem;
-        max-width: 90%;
+    .content {
+        width: 100%;
     }
 }
 
@@ -84,6 +117,11 @@
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
+    .container_logo .logo {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 400px) {
@@ -95,5 +133,13 @@
     }
     .hero p {
         font-size: 1rem;
+    }
+    .container_logo .logo {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+    .btn-primary {
+        width: 100%;
     }
 }

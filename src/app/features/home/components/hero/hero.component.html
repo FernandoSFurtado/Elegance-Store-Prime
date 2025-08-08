@@ -1,10 +1,14 @@
 <section class="hero">
     <div class="container_logo">
-        <img class="logo" src="/assets/logo-dourado.png" alt="Elegance Store Prime Logo">
+        <img class="logo" src="/assets/logo-dourado.png" alt="Elegance Store Prime Logo" />
     </div>
-  <div class="content">
-    <h1>Elegance Store Prime</h1>
-    <p>Minimalismo. Estilo. Conforto. <br> Vista-se para impressionar.</p>
-    <button class="btn-primary">Conheça os modelos</button>
-  </div>
+    <div class="content">
+        <h1>Elegance Store Prime</h1>
+        <p>
+            Minimalismo. Estilo. Conforto. <br />
+            <span class="emphasis">Vista-se para impressionar.</span>
+        </p>
+
+        <app-btn-primary (click)="handleClick()">Conheça os modelos</app-btn-primary>
+    </div>
 </section>
