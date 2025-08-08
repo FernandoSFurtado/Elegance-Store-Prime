@@ -1,2 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'styles/variables';
+@import 'styles/theme';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg-page);
+    color: var(--color-text-default);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.85;
+}

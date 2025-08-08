@@ -1,0 +1,23 @@
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+
+  .testimonial-card {
+    margin-top: 1.5rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    span {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #666;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<section class="featured-products">
+  <div class="container">
+    <h2>Destaques</h2>
+    <div class="products-grid">
+      <div class="product-card" *ngFor="let p of [1,2,3]">
+        <img src="/assets/product-placeholder.jpg" alt="Produto">
+        <h3>Produto {{p}}</h3>
+        <p>R$ 99,90</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  </div>
+</section>
